@@ -17,7 +17,7 @@ const insertUser = async(req,res)=>{
             mobile:req.body.mno,
             image:req.file.filename,
             password:req.body.password,
-            is_admin:0,
+            is_admin:0
         });
 
         const userData = await user.save();
